@@ -1,0 +1,110 @@
+[
+  {
+    "url": "https://sharc-data.github.io/data/sharc1-official.zip",
+    "path": "data/raw/enrichment/sharc.zip",
+    "bytes": 6810878,
+    "sha256": "72dca3f4f3ba73b1d796b40e952a80d53cd2011ef90b2168b8bcaa818f5edd1e"
+  },
+  {
+    "url": "https://stanfordnlp.github.io/contract-nli/resources/contract-nli.zip",
+    "path": "data/raw/enrichment/contract.zip",
+    "bytes": 65362913,
+    "sha256": "e03fc77bbf8b53e2976a250e81d8a294bc3d5e5fb014521e477dee9340d6287b"
+  },
+  {
+    "url": "https://archive.ics.uci.edu/static/public/228/sms+spam+collection.zip",
+    "path": "data/raw/enrichment/sms.zip",
+    "bytes": 203415,
+    "sha256": "1587ea43e58e82b14ff1f5425c88e17f8496bfcdb67a583dbff9eefaf9963ce3"
+  },
+  {
+    "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/main/shopping_queries_dataset/shopping_queries_dataset_examples.parquet",
+    "path": "data/raw/enrichment/esci-examples.parquet",
+    "bytes": 51286808,
+    "sha256": "4a735b693b4a424a6fc67f5be6e4c811495c488bbf66d02a602d308b2744263a"
+  },
+  {
+    "url": "https://media.githubusercontent.com/media/amazon-science/esci-data/main/shopping_queries_dataset/shopping_queries_dataset_products.parquet",
+    "path": "data/raw/enrichment/esci-products.parquet",
+    "bytes": 1108857465,
+    "sha256": "25124442d064d64b26f74082d6fa09438d679efc0c183cf28d19064a2b65a265"
+  },
+  {
+    "url": "https://monkey.org/~jose/phishing/phishing-2023",
+    "path": "data/raw/enrichment/phishing-2023",
+    "bytes": 7763704,
+    "sha256": "5007f1c1dc91b15e93e988afa3a1cf402e15c88f765d3057be8bfec50dae1fe8"
+  },
+  {
+    "url": "https://monkey.org/~jose/phishing/phishing-2024",
+    "path": "data/raw/enrichment/phishing-2024",
+    "bytes": 15457816,
+    "sha256": "60afa40a2757170093a2bde31ec9cda4e54d33992203ce04bfbbc86d2e5e5b99"
+  },
+  {
+    "url": "https://monkey.org/~jose/phishing/phishing-2025",
+    "path": "data/raw/enrichment/phishing-2025",
+    "bytes": 18769863,
+    "sha256": "f1fa7e0fe35c9a16f36d9aa20ade7e1d3908d1d0c1d917b8c53c8aa799ec1c8f"
+  },
+  {
+    "url": "https://monkey.org/~jose/phishing/LICENSE.txt",
+    "path": "data/raw/enrichment/phishing-LICENSE.txt",
+    "bytes": 18657,
+    "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/readme.html",
+    "path": "data/raw/enrichment/spamassassin-readme.txt",
+    "bytes": 4566,
+    "sha256": "9f8cc0c8be6f32b25226d3ece26da775a6e008581b8fb061a679e3acee6b64be"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham.tar.bz2",
+    "path": "data/raw/enrichment/20030228_easy_ham.tar.bz2",
+    "bytes": 1612216,
+    "sha256": "2b7b65904bcfcc31d2b5f51946f2d261370b257402cbbd62930b46ab83367438"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_hard_ham.tar.bz2",
+    "path": "data/raw/enrichment/20030228_hard_ham.tar.bz2",
+    "bytes": 1029898,
+    "sha256": "ce2ce67880643dbde65ea7f85bffbfe4417349c4bd80b6b0de56262ae6b0a9c9"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_easy_ham_2.tar.bz2",
+    "path": "data/raw/enrichment/20030228_easy_ham_2.tar.bz2",
+    "bytes": 1077892,
+    "sha256": "b4bd3dc5ae5b40f38e99a0e41ad7d16b428b56e818e3a6ffa07330d62004dd38"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/20030228_spam.tar.bz2",
+    "path": "data/raw/enrichment/20030228_spam.tar.bz2",
+    "bytes": 1183768,
+    "sha256": "c08debc32413804949a866be45ef78195cec2cbafd1da744ed76cdb860589743"
+  },
+  {
+    "url": "https://spamassassin.apache.org/old/publiccorpus/20050311_spam_2.tar.bz2",
+    "path": "data/raw/enrichment/20050311_spam_2.tar.bz2",
+    "bytes": 2059029,
+    "sha256": "44280a0e28bf7645b2279e8e42659271ad82c6f40bf8d364dbda7f1df344a765"
+  },
+  {
+    "url": "https://huggingface.co/datasets/microsoft/wiki_qa/resolve/3f104672b5de699878fe7907afc486f0de325eb5/data/train-00000-of-00001.parquet",
+    "path": "data/raw/enrichment/wikiqa-train.parquet",
+    "bytes": 2004001,
+    "sha256": "55e3c86de5f7922f68320e8a7f527a854e6add14f9e5f72b9cca97efcdc915ea"
+  },
+  {
+    "url": "https://huggingface.co/datasets/microsoft/wiki_qa/resolve/3f104672b5de699878fe7907afc486f0de325eb5/data/validation-00000-of-00001.parquet",
+    "path": "data/raw/enrichment/wikiqa-validation.parquet",
+    "bytes": 263516,
+    "sha256": "7b774df06cb641feab1e7e3d01aa80eada5443b6a6c2807233d7837c2c50bc4e"
+  },
+  {
+    "url": "https://huggingface.co/datasets/microsoft/wiki_qa/resolve/3f104672b5de699878fe7907afc486f0de325eb5/data/test-00000-of-00001.parquet",
+    "path": "data/raw/enrichment/wikiqa-test.parquet",
+    "bytes": 593691,
+    "sha256": "eb309da359eda13c4a68fcd0dbff5cc7fc4b73d8fda2585d162606dc035b9c48"
+  }
+]

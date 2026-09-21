@@ -1,0 +1,31 @@
+# Local environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+.cache/
+*.egg-info/
+/build/
+/dist/
+
+# Credentials
+.env
+.env.*
+!.env.example
+
+# Research artifacts; keep manifests and recipes in Git
+/data/raw/
+/data/processed/
+/data/benchmarks/
+/runs/
+/checkpoints/
+/artifacts/
+/.lody/
+/assets/site-concepts-*/
+/assets/logo-notes.md
+/docs/naming-and-writing.md
+/docs/versioning.md
+*.safetensors
+*.pt
+*.pth
+*.gguf

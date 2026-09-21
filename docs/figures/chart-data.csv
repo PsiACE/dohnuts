@@ -1,0 +1,101 @@
+figure,task,system,metric,value,n,scope
+01_jevbench,overall,dohnuts,accuracy,0.658008658008658,231,identical_public_ids
+01_jevbench,overall,jev,accuracy,0.8658008658008658,231,identical_public_ids
+01_jevbench,overall,laya-multilingual,accuracy,0.47619047619047616,231,identical_public_ids
+01_jevbench,overall,laya-vision,accuracy,0.4805194805194805,231,identical_public_ids
+01_jevbench,choice,dohnuts,accuracy,0.6834532374100719,139,identical_public_ids
+01_jevbench,choice,jev,accuracy,0.8848920863309353,139,identical_public_ids
+01_jevbench,choice,laya-multilingual,accuracy,0.5035971223021583,139,identical_public_ids
+01_jevbench,choice,laya-vision,accuracy,0.4676258992805755,139,identical_public_ids
+01_jevbench,noul,dohnuts,accuracy,0.6216216216216216,74,identical_public_ids
+01_jevbench,noul,jev,accuracy,0.8513513513513513,74,identical_public_ids
+01_jevbench,noul,laya-multilingual,accuracy,0.4864864864864865,74,identical_public_ids
+01_jevbench,noul,laya-vision,accuracy,0.5,74,identical_public_ids
+01_jevbench,score,dohnuts,accuracy,0.6111111111111112,18,identical_public_ids
+01_jevbench,score,jev,accuracy,0.7777777777777778,18,identical_public_ids
+01_jevbench,score,laya-multilingual,accuracy,0.2222222222222222,18,identical_public_ids
+01_jevbench,score,laya-vision,accuracy,0.5,18,identical_public_ids
+01_jevbench,easy,dohnuts,accuracy,1.0,48,identical_public_ids
+01_jevbench,easy,jev,accuracy,1.0,48,identical_public_ids
+01_jevbench,easy,laya-multilingual,accuracy,0.8958333333333334,48,identical_public_ids
+01_jevbench,easy,laya-vision,accuracy,0.8958333333333334,48,identical_public_ids
+01_jevbench,standard,dohnuts,accuracy,0.7777777777777778,72,identical_public_ids
+01_jevbench,standard,jev,accuracy,0.9861111111111112,72,identical_public_ids
+01_jevbench,standard,laya-multilingual,accuracy,0.4166666666666667,72,identical_public_ids
+01_jevbench,standard,laya-vision,accuracy,0.4722222222222222,72,identical_public_ids
+01_jevbench,hard,dohnuts,accuracy,0.43243243243243246,111,identical_public_ids
+01_jevbench,hard,jev,accuracy,0.7297297297297297,111,identical_public_ids
+01_jevbench,hard,laya-multilingual,accuracy,0.3333333333333333,111,identical_public_ids
+01_jevbench,hard,laya-vision,accuracy,0.3063063063063063,111,identical_public_ids
+02_applications,apps/jev.ag_news,dohnuts,accuracy,0.89,400,published_application_protocol
+02_applications,apps/jev.ag_news,laya-multilingual,accuracy,0.93,400,published_application_protocol
+02_applications,apps/jev.emotion,dohnuts,accuracy,0.7825,400,published_application_protocol
+02_applications,apps/jev.emotion,laya-multilingual,accuracy,0.53,400,published_application_protocol
+02_applications,apps/jev.banking77_full,dohnuts,accuracy,0.705,400,published_application_protocol
+02_applications,apps/jev.banking77_full,laya-multilingual,accuracy,0.425,400,published_application_protocol
+02_applications,apps/app.email_spam,dohnuts,accuracy,0.7875,400,published_application_protocol
+02_applications,apps/app.email_spam,laya-multilingual,accuracy,0.993,400,published_application_protocol
+02_applications,apps/app.phishing,dohnuts,accuracy,0.7575,400,published_application_protocol
+02_applications,apps/app.phishing,laya-multilingual,accuracy,0.993,400,published_application_protocol
+02_applications,apps/app.guardrails_jailbreak,dohnuts,accuracy,0.905,400,published_application_protocol
+02_applications,apps/app.guardrails_jailbreak,laya-multilingual,accuracy,0.755,400,published_application_protocol
+02_applications,apps/app.moderation_toxicity,dohnuts,accuracy,0.6825,400,published_application_protocol
+02_applications,apps/app.moderation_toxicity,laya-multilingual,accuracy,0.525,400,published_application_protocol
+02_applications,apps/app.rag_relevance,dohnuts,accuracy,0.665,400,published_application_protocol
+02_applications,apps/app.rag_relevance,laya-multilingual,accuracy,0.657,400,published_application_protocol
+02_applications,apps/app.support_triage,dohnuts,accuracy,0.355,400,published_application_protocol
+02_applications,apps/app.support_triage,laya-multilingual,accuracy,0.522,400,published_application_protocol
+02_applications,apps/app.model_routing_domain,dohnuts,accuracy,0.7669172932330827,399,published_application_protocol
+02_applications,apps/app.model_routing_domain,laya-multilingual,accuracy,0.12300000000000001,399,published_application_protocol
+02_applications,colab/typed_decisions,dohnuts,accuracy,0.723,2000,published_application_protocol
+02_applications,colab/typed_decisions,laya-multilingual,accuracy,0.342,2000,published_application_protocol
+03_multilingual,MASSIVE intent; 51 languages × 100,dohnuts,language_macro_accuracy,0.6013725490196078,5100,published_multilingual_protocol
+03_multilingual,MASSIVE intent; 51 languages × 100,laya-multilingual,language_macro_accuracy,0.3661,5100,published_multilingual_protocol
+03_multilingual,MASSIVE intent; 14 languages × 300,dohnuts,language_macro_accuracy,0.7326190476190477,4200,published_multilingual_protocol
+03_multilingual,MASSIVE intent; 14 languages × 300,laya-multilingual,language_macro_accuracy,0.46595238095238095,4200,published_multilingual_protocol
+03_multilingual,MASSIVE scenario; 14 languages × 300,dohnuts,language_macro_accuracy,0.5259523809523811,4200,published_multilingual_protocol
+03_multilingual,MASSIVE scenario; 14 languages × 300,laya-multilingual,language_macro_accuracy,0.4473809523809523,4200,published_multilingual_protocol
+03_multilingual,XNLI; 15 languages × 300,dohnuts,language_macro_accuracy,0.7091111111111111,4500,published_multilingual_protocol
+03_multilingual,XNLI; 15 languages × 300,laya-multilingual,language_macro_accuracy,0.7384444444444445,4500,published_multilingual_protocol
+04_vision,aokvqa,dohnuts,accuracy,0.781195079086116,1138,local_same_ids
+04_vision,scienceqa,dohnuts,accuracy,0.8458106098165592,2017,local_same_ids
+04_vision,vqav2_yesno,dohnuts,accuracy,0.8081955072821525,8102,local_same_ids
+04_vision,aokvqa,laya-vision,accuracy,0.6239015817223199,1138,local_same_ids
+04_vision,scienceqa,laya-vision,accuracy,0.8879524045612296,2017,local_same_ids
+04_vision,vqav2_yesno,laya-vision,accuracy,0.7696864971611947,8102,local_same_ids
+04_vision,aokvqa,dohnuts,ece_15,0.06937503030383939,1138,local_same_ids
+04_vision,scienceqa,dohnuts,ece_15,0.04454757311174103,2017,local_same_ids
+04_vision,vqav2_yesno,dohnuts,ece_15,0.16743869993616028,8102,local_same_ids
+04_vision,aokvqa,laya-vision,ece_15,0.10161188133686672,1138,local_same_ids
+04_vision,scienceqa,laya-vision,ece_15,0.02849080270990953,2017,local_same_ids
+04_vision,vqav2_yesno,laya-vision,ece_15,0.031318949363764295,8102,local_same_ids
+05_latency,text_1q,dohnuts,p50_ms,15.068571490701288,20,warm_same_gpu_native_api
+05_latency,text_5q,dohnuts,p50_ms,33.290366001892835,20,warm_same_gpu_native_api
+05_latency,text_10q,dohnuts,p50_ms,41.57443650183268,20,warm_same_gpu_native_api
+05_latency,text_50q,dohnuts,p50_ms,112.51106898998842,20,warm_same_gpu_native_api
+05_latency,text_1q,laya-multilingual,p50_ms,9.77273549506208,20,warm_same_gpu_native_api
+05_latency,text_5q,laya-multilingual,p50_ms,14.757040997210424,20,warm_same_gpu_native_api
+05_latency,text_10q,laya-multilingual,p50_ms,15.505847499298397,20,warm_same_gpu_native_api
+05_latency,text_50q,laya-multilingual,p50_ms,47.18665350083029,20,warm_same_gpu_native_api
+05_latency,text_1q,laya-vision,p50_ms,11.004746505932417,20,warm_same_gpu_native_api
+05_latency,text_5q,laya-vision,p50_ms,15.885435503150802,20,warm_same_gpu_native_api
+05_latency,text_10q,laya-vision,p50_ms,30.90040550159756,20,warm_same_gpu_native_api
+05_latency,text_50q,laya-vision,p50_ms,125.62829850503476,20,warm_same_gpu_native_api
+05_latency,image_1q,dohnuts,p50_ms,24.430210003629327,20,warm_same_gpu_native_api
+05_latency,image_3q,dohnuts,p50_ms,35.844956495566294,20,warm_same_gpu_native_api
+05_latency,image_1q,laya-vision,p50_ms,75.40706799773034,20,warm_same_gpu_native_api
+05_latency,image_3q,laya-vision,p50_ms,77.888197505672,20,warm_same_gpu_native_api
+06_agreement,jev,Dohnuts vs jev,both_correct,148,231,identical_public_ids
+06_agreement,jev,Dohnuts vs jev,dohnuts_only_correct,4,231,identical_public_ids
+06_agreement,jev,Dohnuts vs jev,reference_only_correct,52,231,identical_public_ids
+06_agreement,jev,Dohnuts vs jev,both_wrong,27,231,identical_public_ids
+06_agreement,laya-multilingual,Dohnuts vs laya-multilingual,both_correct,95,231,identical_public_ids
+06_agreement,laya-multilingual,Dohnuts vs laya-multilingual,dohnuts_only_correct,57,231,identical_public_ids
+06_agreement,laya-multilingual,Dohnuts vs laya-multilingual,reference_only_correct,15,231,identical_public_ids
+06_agreement,laya-multilingual,Dohnuts vs laya-multilingual,both_wrong,64,231,identical_public_ids
+06_agreement,laya-vision,Dohnuts vs laya-vision,both_correct,101,231,identical_public_ids
+06_agreement,laya-vision,Dohnuts vs laya-vision,dohnuts_only_correct,51,231,identical_public_ids
+06_agreement,laya-vision,Dohnuts vs laya-vision,reference_only_correct,10,231,identical_public_ids
+06_agreement,laya-vision,Dohnuts vs laya-vision,both_wrong,69,231,identical_public_ids
+06_agreement,laya-multilingual,Dohnuts vs laya-multilingual,exact_answer_agreement,142,231,identical_public_ids
+06_agreement,laya-vision,Dohnuts vs laya-vision,exact_answer_agreement,147,231,identical_public_ids

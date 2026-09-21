@@ -1,0 +1,73 @@
+{
+  "version": "0.1.0",
+  "model_id": "Dohnuts-0.1.0-0.8B",
+  "checkpoint_sha256": "196be33a0282537bcd821e2115643b352d0ad2a0bbaf7b242a1b7fe5bd96cfdf",
+  "seed": 42,
+  "step": 3600,
+  "matplotlib": "3.11.2",
+  "numpy": "2.5.3",
+  "figures": [
+    {
+      "name": "01_jevbench",
+      "title": "JevBench: decision types and difficulty",
+      "notes": [
+        "Jev: published per-task outcomes, v1.2.2. Dohnuts and both Laya checkpoints: local measurements. All 231 local outputs are valid.",
+        "Dohnuts context limit: 4,096 tokens. Laya defaults: 1,024 tokens with native truncation. Vision is tested on text here.",
+        "303 official tasks are unavailable, including the judge tier. This is not the 534-task leaderboard score. One Dohnuts seed."
+      ]
+    },
+    {
+      "name": "02_applications",
+      "title": "Laya multilingual: application tasks",
+      "notes": [
+        "Counts beside tasks are decisions, not training examples. Original upstream question builders, seed 13 and candidate order.",
+        "The published application/chart reference is used consistently, including typed decisions (2,000 decisions).",
+        "Historical Laya dataset revisions and per-example hashes are unavailable; byte-identical historical inputs cannot be verified."
+      ]
+    },
+    {
+      "name": "03_multilingual",
+      "title": "Laya multilingual: language coverage and accuracy",
+      "notes": [
+        "MASSIVE intent uses 20 candidates; XNLI uses 3. The 51-language and 14-language suites are distinct evaluations.",
+        "On the 51-language suite, accuracy exceeds 15% (3\u00d7 random) in 51/51 languages for Dohnuts and 45/51 for multilingual.",
+        "Dohnuts: measured. Laya multilingual: published reference. Historical byte identity cannot be independently verified."
+      ]
+    },
+    {
+      "name": "04_vision",
+      "title": "Laya Vision: accuracy and calibration",
+      "notes": [
+        "ScienceQA: official test image subset. VQAv2: independent split of the validation pool. These are not the model-card splits.",
+        "Laya Vision has possible VQAv2 training exposure and A-OKVQA checkpoint-selection exposure; this is not a blind comparison.",
+        "Laya: FP32 CPU, 2,048-token total/head budgets. Dohnuts: BF16. ECE: 15 bins, deployed temperatures, no per-task refit."
+      ]
+    },
+    {
+      "name": "05_latency",
+      "title": "Same-hardware inference latency",
+      "notes": [
+        "3 warmups and 20 synchronized repetitions. Includes preprocessing and transfers; excludes loading, network and queueing.",
+        "Uses each native API, tokenizer and cache behavior. Image timings are warm, not uncached image-encoder timings.",
+        "Laya uses the fixed same-hardware baseline; Dohnuts uses Dohnuts-0.1.0-0.8B. Jev API latency is not mixed into this chart."
+      ]
+    },
+    {
+      "name": "06_agreement",
+      "title": "JevBench: paired correctness and answer agreement",
+      "notes": [
+        "Jev publishes correctness, not predicted labels: its exact answer-agreement count is unavailable.",
+        "148 shared correct answers confirm the same label. The 27 shared errors may have different labels; 175 is correctness agreement."
+      ]
+    }
+  ],
+  "files": {
+    "01_jevbench.svg": "b9ef1fd65c44bd3b216f2b583bcf00e3ae4b78e6d0bdf1a3dd19342e8dbfdfde",
+    "02_applications.svg": "3f4e072de001da5c29af6895caaf59a86399e2dfc6d78bed23eb34cdc1d75034",
+    "03_multilingual.svg": "efb052e46f2f0f1b050ab82ea0c2a5d22e12d6a83a8418d95ab1df0a6d9bcccd",
+    "04_vision.svg": "4001f6d79b66283939deb0fdca09e39d899055187fd25495b5d2f2beefb883f7",
+    "05_latency.svg": "4b515d7e439c6a87e069d088a86faf15746d8591d950116f4e9c7ede4154b7e1",
+    "06_agreement.svg": "a4cfa64f1b211bf15f3326f8e82a5ff656409b191a0cc96e7b0b363765ce7822",
+    "chart-data.csv": "3e912fc30bc4ae0a39c55c2191c79459629582f720ca9410b44ec88df50c0b54"
+  }
+}

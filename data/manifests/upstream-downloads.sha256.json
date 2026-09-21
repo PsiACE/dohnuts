@@ -1,0 +1,778 @@
+[
+  {
+    "source": "LocalLLaMA/typed-decisions",
+    "revision": "ea9306458d6e9563628369a3d1e72e362fb381d2",
+    "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions/resolve/ea9306458d6e9563628369a3d1e72e362fb381d2/README.md",
+    "path": "data/raw/hf/LocalLLaMA/typed-decisions/README.md",
+    "bytes": 14053,
+    "sha256": "b22b2b778f75574c5f7fc832e9d5b4cfe5b02e51e2a308913cd3cabfb0049a49"
+  },
+  {
+    "source": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/README.md",
+    "path": "data/raw/hf/dair-ai/emotion/README.md",
+    "bytes": 9052,
+    "sha256": "7b10e5670f3e5b0a12274e90aad8f85fc48d8e25eccb4e4c16933cd8b7dfc373"
+  },
+  {
+    "source": "LocalLLaMA/typed-decisions",
+    "revision": "ea9306458d6e9563628369a3d1e72e362fb381d2",
+    "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions/resolve/ea9306458d6e9563628369a3d1e72e362fb381d2/all/test-00000-of-00001.parquet",
+    "path": "data/raw/hf/LocalLLaMA/typed-decisions/all/test-00000-of-00001.parquet",
+    "bytes": 222140,
+    "sha256": "4f294f218ea1da27f3efef936359389c62ea4d3973a41457732990f1d31b647c"
+  },
+  {
+    "source": "LocalLLaMA/typed-decisions",
+    "revision": "ea9306458d6e9563628369a3d1e72e362fb381d2",
+    "url": "https://huggingface.co/datasets/LocalLLaMA/typed-decisions/resolve/ea9306458d6e9563628369a3d1e72e362fb381d2/all/train-00000-of-00001.parquet",
+    "path": "data/raw/hf/LocalLLaMA/typed-decisions/all/train-00000-of-00001.parquet",
+    "bytes": 598824,
+    "sha256": "46a58d63edfd86e23229c78afe8b72307bb4ca9fb0e8df180cabb3c67ec9dcd5"
+  },
+  {
+    "source": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/test-00000-of-00001.parquet",
+    "path": "data/raw/hf/dair-ai/emotion/split/test-00000-of-00001.parquet",
+    "bytes": 128987,
+    "sha256": "6f8407fa1ca9c310f55781f082ed73812f6551e8dda2c61973123a121869245b"
+  },
+  {
+    "source": "PolyAI/banking77",
+    "revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+    "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/90d4e2ee5521c04fc1488f065b8b083658768c57/README.md",
+    "path": "data/raw/hf/PolyAI/banking77/README.md",
+    "bytes": 9779,
+    "sha256": "b494ae99274ad98adfedfefcb504469197a8732f9726f678320f4aaafc5502bf"
+  },
+  {
+    "source": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/train-00000-of-00001.parquet",
+    "path": "data/raw/hf/dair-ai/emotion/split/train-00000-of-00001.parquet",
+    "bytes": 1030740,
+    "sha256": "10817f0f2ea42358bc62f69a09dfb8bd71701727df6d5a387bea742f3ea06417"
+  },
+  {
+    "source": "PolyAI/banking77",
+    "revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+    "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/90d4e2ee5521c04fc1488f065b8b083658768c57/banking77.py",
+    "path": "data/raw/hf/PolyAI/banking77/banking77.py",
+    "bytes": 7168,
+    "sha256": "0e2b20c18def828886300332b15c6f647b77cdc289d1b49fffe65d8fde1d0834"
+  },
+  {
+    "source": "PolyAI/banking77",
+    "revision": "90d4e2ee5521c04fc1488f065b8b083658768c57",
+    "url": "https://huggingface.co/datasets/PolyAI/banking77/resolve/90d4e2ee5521c04fc1488f065b8b083658768c57/dataset_infos.json",
+    "path": "data/raw/hf/PolyAI/banking77/dataset_infos.json",
+    "bytes": 5892,
+    "sha256": "402fed10f4894f8989dffeca0a81572ca488e6488fac3f18a33d9fd32422acc7"
+  },
+  {
+    "source": "fancyzhx/ag_news",
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/README.md",
+    "path": "data/raw/hf/fancyzhx/ag_news/README.md",
+    "bytes": 8070,
+    "sha256": "0ae9549054c5eca6a2284b1a6e8505b1ec92a39613aca402336429762b544a62"
+  },
+  {
+    "source": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "url": "https://huggingface.co/datasets/dair-ai/emotion/resolve/cab853a1dbdf4c42c2b3ef2173804746df8825fe/split/validation-00000-of-00001.parquet",
+    "path": "data/raw/hf/dair-ai/emotion/split/validation-00000-of-00001.parquet",
+    "bytes": 127466,
+    "sha256": "c70f0e660b5ebd1ea9a37d2a851f516f08a6d6477cdfc11be204e22a2f1102fd"
+  },
+  {
+    "source": "derek-thomas/ScienceQA",
+    "revision": "f18b0a70359ebfb41f658fd564208d0355b013f4",
+    "url": "https://huggingface.co/datasets/derek-thomas/ScienceQA/resolve/f18b0a70359ebfb41f658fd564208d0355b013f4/README.md",
+    "path": "data/raw/hf/derek-thomas/ScienceQA/README.md",
+    "bytes": 10308,
+    "sha256": "3729fae304968ed8b9917b41034412aa142fb4760e2bfdab3dfe67a7fd78a17a"
+  },
+  {
+    "source": "fancyzhx/ag_news",
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/data/test-00000-of-00001.parquet",
+    "path": "data/raw/hf/fancyzhx/ag_news/data/test-00000-of-00001.parquet",
+    "bytes": 1234829,
+    "sha256": "71de87ec66bc5737752a2502204dfa6d7fe9856ade3ea444dc6317789a4f13fb"
+  },
+  {
+    "source": "fancyzhx/ag_news",
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "url": "https://huggingface.co/datasets/fancyzhx/ag_news/resolve/eb185aade064a813bc0b7f42de02595523103ca4/data/train-00000-of-00001.parquet",
+    "path": "data/raw/hf/fancyzhx/ag_news/data/train-00000-of-00001.parquet",
+    "bytes": 18585438,
+    "sha256": "fc508d6d9868594e3da960a8cfeb63ab5a4746598b93428c224397080c1f52ee"
+  },
+  {
+    "source": "HuggingFaceM4/A-OKVQA",
+    "revision": "d1b0efa3a436e9101dfbde3752db7607da696c35",
+    "url": "https://huggingface.co/datasets/HuggingFaceM4/A-OKVQA/resolve/d1b0efa3a436e9101dfbde3752db7607da696c35/README.md",
+    "path": "data/raw/hf/HuggingFaceM4/A-OKVQA/README.md",
+    "bytes": 964,
+    "sha256": "f199fe679f5124b484fb5e6fd50d40162753d3a2944b532193eb2a2152af8aca"
+  },
+  {
+    "source": "derek-thomas/ScienceQA",
+    "revision": "f18b0a70359ebfb41f658fd564208d0355b013f4",
+    "url": "https://huggingface.co/datasets/derek-thomas/ScienceQA/resolve/f18b0a70359ebfb41f658fd564208d0355b013f4/data/test-00000-of-00001-f0e719df791966ff.parquet",
+    "path": "data/raw/hf/derek-thomas/ScienceQA/data/test-00000-of-00001-f0e719df791966ff.parquet",
+    "bytes": 122386007,
+    "sha256": "235e92d1f30155266df76bc9f28fc6e4fcb6bec2c6a8c7d67f9086ea6b392a84"
+  },
+  {
+    "source": "derek-thomas/ScienceQA",
+    "revision": "f18b0a70359ebfb41f658fd564208d0355b013f4",
+    "url": "https://huggingface.co/datasets/derek-thomas/ScienceQA/resolve/f18b0a70359ebfb41f658fd564208d0355b013f4/data/validation-00000-of-00001-6c7328ff6c84284c.parquet",
+    "path": "data/raw/hf/derek-thomas/ScienceQA/data/validation-00000-of-00001-6c7328ff6c84284c.parquet",
+    "bytes": 126235086,
+    "sha256": "e66b5215ce71e748ade4ee629bc14fbf86762071d355a4fcd831581cc04d72d8"
+  },
+  {
+    "source": "HuggingFaceM4/A-OKVQA",
+    "revision": "d1b0efa3a436e9101dfbde3752db7607da696c35",
+    "url": "https://huggingface.co/datasets/HuggingFaceM4/A-OKVQA/resolve/d1b0efa3a436e9101dfbde3752db7607da696c35/data/validation-00000-of-00001-b2bd0de231b6326a.parquet",
+    "path": "data/raw/hf/HuggingFaceM4/A-OKVQA/data/validation-00000-of-00001-b2bd0de231b6326a.parquet",
+    "bytes": 60428570,
+    "sha256": "419b38d94b1529b00d4aa0da0e945b946d8f028514183a267f87e25297ea404d"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/README.md",
+    "path": "data/raw/hf/facebook/xnli/README.md",
+    "bytes": 20789,
+    "sha256": "e951158edde65027380c20e827c3c2ac7ca9903bff0ff65209806b9d71a0607a"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/en/test-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/en/test-00000-of-00001.parquet",
+    "bytes": 308237,
+    "sha256": "8f0fd1e105091e0f11cd37f9b2bc382f16de9949aa9471e1366b2605ba037167"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/en/train-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/en/train-00000-of-00001.parquet",
+    "bytes": 50161923,
+    "sha256": "6be63cec9ec932a5790de82caee7ee4d00e5a50ef19b79f23b740732da143424"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/en/validation-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/en/validation-00000-of-00001.parquet",
+    "bytes": 157207,
+    "sha256": "42961a7b66dee147da655d78db8cbaac97b3dbcf898009acffec6cda2d80f2bf"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/zh/test-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/zh/test-00000-of-00001.parquet",
+    "bytes": 309645,
+    "sha256": "0588db7da3ed00a677dc6ac521e9b3e1c8ecf286ea0c2182b9a6a346b22c4645"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/zh/train-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/zh/train-00000-of-00001.parquet",
+    "bytes": 47802797,
+    "sha256": "2b328b786fca5061b5a4676ca6d8c2861f2e700e0c1b300ea229f3de27ef8f9f"
+  },
+  {
+    "source": "facebook/xnli",
+    "revision": "b8dd5d7af51114dbda02c0e3f6133f332186418e",
+    "url": "https://huggingface.co/datasets/facebook/xnli/resolve/b8dd5d7af51114dbda02c0e3f6133f332186418e/zh/validation-00000-of-00001.parquet",
+    "path": "data/raw/hf/facebook/xnli/zh/validation-00000-of-00001.parquet",
+    "bytes": 157413,
+    "sha256": "a028221cd83ff84d8dcebc6da36a123a1371bb98ab89b50d82eea31b12aeb68c"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/README.md",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/README.md",
+    "bytes": 962,
+    "sha256": "ab40923f6c8e956f81d75ad1bc91a14cceaac28d5abf9e1af3ab2cdcdd912368"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00000-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00000-of-00068.parquet",
+    "bytes": 89434882,
+    "sha256": "f21976c1b29cc26655613395d51c3e301ffd8c29d43ebfc499bde92657dfd933"
+  },
+  {
+    "source": "HuggingFaceM4/A-OKVQA",
+    "revision": "d1b0efa3a436e9101dfbde3752db7607da696c35",
+    "url": "https://huggingface.co/datasets/HuggingFaceM4/A-OKVQA/resolve/d1b0efa3a436e9101dfbde3752db7607da696c35/data/train-00000-of-00002-c1d24de3bacb5e0c.parquet",
+    "path": "data/raw/hf/HuggingFaceM4/A-OKVQA/data/train-00000-of-00002-c1d24de3bacb5e0c.parquet",
+    "bytes": 462131109,
+    "sha256": "180cedb78fee083f2b122ae4eb97aa4b2cae5f8d3ea26707e9871cfb9fbfdba5"
+  },
+  {
+    "source": "HuggingFaceM4/A-OKVQA",
+    "revision": "d1b0efa3a436e9101dfbde3752db7607da696c35",
+    "url": "https://huggingface.co/datasets/HuggingFaceM4/A-OKVQA/resolve/d1b0efa3a436e9101dfbde3752db7607da696c35/data/train-00001-of-00002-6b4f3abe2dc385d0.parquet",
+    "path": "data/raw/hf/HuggingFaceM4/A-OKVQA/data/train-00001-of-00002-6b4f3abe2dc385d0.parquet",
+    "bytes": 464038065,
+    "sha256": "73c6f7065328d177d3c035096bf4c599f6b86e5cc0ebc39bb4b08e2d567537ef"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00002-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00002-of-00068.parquet",
+    "bytes": 98544574,
+    "sha256": "ed9b3304a8c0f31d0b147b8f70f3f23384121196de8a426516bbe8558e56c7d6"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00003-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00003-of-00068.parquet",
+    "bytes": 102510458,
+    "sha256": "b5920d2fa25c1200cb876d3d274e69df381b2273ea4996c2bcdb54a1e08c47e6"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00004-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00004-of-00068.parquet",
+    "bytes": 103466291,
+    "sha256": "2cf2f894e25543e14618037ac24f07e84ec49286f7b8833869a171caa5778b92"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00005-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00005-of-00068.parquet",
+    "bytes": 105159748,
+    "sha256": "3d8041939b34cdec2255667eadb2061d37b642e870b32e15247a524d48c9c848"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00001-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00001-of-00068.parquet",
+    "bytes": 102566900,
+    "sha256": "494a6dfe7e2f0a7fddaee128b5829f597c48e6309e0b1b5ea6f437f2117b376c"
+  },
+  {
+    "source": "derek-thomas/ScienceQA",
+    "revision": "f18b0a70359ebfb41f658fd564208d0355b013f4",
+    "url": "https://huggingface.co/datasets/derek-thomas/ScienceQA/resolve/f18b0a70359ebfb41f658fd564208d0355b013f4/data/train-00000-of-00001-1028f23e353fbe3e.parquet",
+    "path": "data/raw/hf/derek-thomas/ScienceQA/data/train-00000-of-00001-1028f23e353fbe3e.parquet",
+    "bytes": 377460993,
+    "sha256": "62c90a28e3fb1bc0ad7bbcab1ac62b483ae6758291a655944d8f494bf6445745"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00006-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00006-of-00068.parquet",
+    "bytes": 101808210,
+    "sha256": "295821aa678d2cd0e7fa7740061564c4c57917d5f3028a7b6df36bb556657424"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00009-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00009-of-00068.parquet",
+    "bytes": 108456065,
+    "sha256": "51374f286d53d1f4dd20b2b3032b21489acffddc569baf892cc4b2da604997fa"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00008-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00008-of-00068.parquet",
+    "bytes": 102854706,
+    "sha256": "bd1876f2db7e70c4a5f52247b438f83d12a774fa1888c2dba10ce5ca8642fd8c"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00007-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00007-of-00068.parquet",
+    "bytes": 104238026,
+    "sha256": "6ce612a0981cd937a657eff28a1f9e3242b4b079326b354ab34ed69eae1f98f0"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00010-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00010-of-00068.parquet",
+    "bytes": 109389560,
+    "sha256": "c28a012fa6b5e923ed03d0a0ec1f683bb7c25d1de5b21c4e38792f141f0018d2"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00012-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00012-of-00068.parquet",
+    "bytes": 99708530,
+    "sha256": "8302a84762e3d7580888df3618250e6064da35c0a7acb0b482d44c96f689a23a"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00011-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00011-of-00068.parquet",
+    "bytes": 104367530,
+    "sha256": "fc0d67011ddaed1ada18f2015068f5fd1fb9f641476645bb83de2795807bc835"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00013-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00013-of-00068.parquet",
+    "bytes": 97243202,
+    "sha256": "1391250d34b429541b2bc6e905e1132ca8fa756c18cf01e0efc1a11b036e7ce3"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00014-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00014-of-00068.parquet",
+    "bytes": 107209491,
+    "sha256": "4a7900627fb00849e590e1f51c6de3cd98aa4dda713bb3e43f21f84f800c0a16"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00017-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00017-of-00068.parquet",
+    "bytes": 102410894,
+    "sha256": "7698577945e7a567f27d14ab46999d5d2a1e871768812da47a3b339010a0c42b"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00016-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00016-of-00068.parquet",
+    "bytes": 113511816,
+    "sha256": "4c1491bf0de120bbc5237724978947012cd588ddd2798d8ddb917c130d2ec680"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00015-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00015-of-00068.parquet",
+    "bytes": 100504950,
+    "sha256": "d5d43d77235bcb22072f0bd177ab11acbc72b05b0bc045e3518f32d35f7f41dc"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00019-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00019-of-00068.parquet",
+    "bytes": 104205323,
+    "sha256": "45e03a5d86c5025f534f4e5e9f3ff33be5114df2e381bf696a4d9e188a61bd35"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00021-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00021-of-00068.parquet",
+    "bytes": 99287444,
+    "sha256": "393a9ec7448c437c8f1d061a23874aa2e5f814f37082bff26ffe1dae3201d38f"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00020-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00020-of-00068.parquet",
+    "bytes": 102823403,
+    "sha256": "fbf476a9d96341a885f788f089ed7e6295c33cd5dc0c9045aa2a419af7442af2"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00022-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00022-of-00068.parquet",
+    "bytes": 103743580,
+    "sha256": "6bb8ee8f0eab9269f8078060cf7c45afe68ecaf068329c8af98480d558e65403"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00023-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00023-of-00068.parquet",
+    "bytes": 99040495,
+    "sha256": "9bb0a678a9acb4dc3ea5171ca2428f5fa6f1db1a532b732a80e360a7afa622ab"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00024-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00024-of-00068.parquet",
+    "bytes": 102304830,
+    "sha256": "58963a34096f60673cc90f32ce9fe7335f6225c0d51fa5fee5df67097f4f0931"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00018-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00018-of-00068.parquet",
+    "bytes": 100949922,
+    "sha256": "b43b812e1e5f8101311519352029fa8a5ef5e4fc7ef07c611ade46e5511372ac"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00026-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00026-of-00068.parquet",
+    "bytes": 98468761,
+    "sha256": "47bd148b2992dd0c2de2d085dbd4277e6558f706c82c29071fd49dc004056e67"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00027-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00027-of-00068.parquet",
+    "bytes": 110867608,
+    "sha256": "c9f0c3551523b7f24590ea2437c15d14421c6828b68b31c9f7a28e07bcdba3a0"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00025-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00025-of-00068.parquet",
+    "bytes": 97780442,
+    "sha256": "47ebe76863af383a890cac38479c29c106bef6224112faa7b19e9d1e98238c85"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00028-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00028-of-00068.parquet",
+    "bytes": 102757070,
+    "sha256": "d833fa5c91009f4748ec3eea2f261cb332e83de10efab3dd2cbb18f5d1df2dbc"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00029-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00029-of-00068.parquet",
+    "bytes": 101977667,
+    "sha256": "6836728d67334f89759de738a1fd9dc9e537e8fc1358ff2f9a6da750f41b8668"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00030-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00030-of-00068.parquet",
+    "bytes": 96157302,
+    "sha256": "994c5ad806717febb05ec4cf5e3aa7b38ac4f4dfa6ccfe940652bc39dd573031"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00031-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00031-of-00068.parquet",
+    "bytes": 109479829,
+    "sha256": "39e5b2788abfb550783ee9c93219565ae6b226a28cf40125f8fc254cd36a2a30"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00032-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00032-of-00068.parquet",
+    "bytes": 100760326,
+    "sha256": "63ba8c58ca1fd9c9a612ebc09eadf9e1f26e2e37aa08b191b98a8b79e096403e"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00036-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00036-of-00068.parquet",
+    "bytes": 105431705,
+    "sha256": "bd4171c9426daa1f81752615c9cf20e205d482f41c3aa7ddc574ea6461faa042"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00033-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00033-of-00068.parquet",
+    "bytes": 97760420,
+    "sha256": "07cd302c947ec801d29c186685b79a1497244e0920e988f2e9b19d0c42bb1dd8"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00034-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00034-of-00068.parquet",
+    "bytes": 95915442,
+    "sha256": "180c3928c6594e4ed9a035a5660c252c39153b773996ab6b71e018f13252c175"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00035-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00035-of-00068.parquet",
+    "bytes": 109187304,
+    "sha256": "779dd74116f48ee3bf4fb80f0ff9347ebcf30a8d1e3c9729560099f777ab3e8f"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00037-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00037-of-00068.parquet",
+    "bytes": 105652000,
+    "sha256": "2ef40e1ba3d480b149ef919525996acb66e2124cee127230d0efba3f6afd6c05"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00039-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00039-of-00068.parquet",
+    "bytes": 98302281,
+    "sha256": "21e4bad61bde2642a872f9ca8494ac904291f02f59a6e6d90f0f939e8ba1118b"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00038-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00038-of-00068.parquet",
+    "bytes": 102875217,
+    "sha256": "8a81f7f80ef9c621a0b2cf1454c350ae350be7a8fbf422b73f3fed1d0c8c773b"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00041-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00041-of-00068.parquet",
+    "bytes": 103219521,
+    "sha256": "f2430d82d32d7f1b6cafffa33bc388361c8ca0b66eb4af2a1c4844143a010ba7"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00043-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00043-of-00068.parquet",
+    "bytes": 100957004,
+    "sha256": "177006cbb6ceab548281846a4b9f3a27e8f736206c0960f1e2c0e6fbc3a4ae06"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00042-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00042-of-00068.parquet",
+    "bytes": 101464344,
+    "sha256": "9d3d334cb51b33df4ee5244ea77df509a7e269ae3f706cd5212694625dfb061f"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00040-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00040-of-00068.parquet",
+    "bytes": 106064263,
+    "sha256": "1c00b580ec1d6f3f0d40106b121eb805d2d2d5cddcbcd16d6199345614a92ef4"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00045-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00045-of-00068.parquet",
+    "bytes": 107585595,
+    "sha256": "a91381472e5fa11f28f26d8ca08de5fc34dfbdda12b179d0ffed68e152bd38c8"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00046-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00046-of-00068.parquet",
+    "bytes": 97901982,
+    "sha256": "5e0e089fcf4437c4920a50cab58990867d13bac282171636a12ec74b8a6d7b81"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00047-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00047-of-00068.parquet",
+    "bytes": 102611035,
+    "sha256": "e5b5659c8c98b0e75b71bfe3cf80db7a74ba39df3ff00dfbb830e45f9b27a5be"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00044-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00044-of-00068.parquet",
+    "bytes": 92707339,
+    "sha256": "fab49e21f924bcc1e460365ccbacfc6ef44bf722447e6412c52f42c515ee180b"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00048-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00048-of-00068.parquet",
+    "bytes": 103183539,
+    "sha256": "779578eb4d231eafbb39f4fad5939954a3b667f9c6c5fbb45b8c8a4551c0e01d"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00051-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00051-of-00068.parquet",
+    "bytes": 93613238,
+    "sha256": "154849bccf88835f2652e983ba54a40f8dd518cfff5d6cd135b5bd780759ae66"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00049-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00049-of-00068.parquet",
+    "bytes": 104688754,
+    "sha256": "452b8f706a20b49eac28cf2926727e06085c634b16d31203794b76f0a603d735"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00050-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00050-of-00068.parquet",
+    "bytes": 99825747,
+    "sha256": "6888381dca33fc0bfa33c13687f9c561c991d3d63c05ae86acbe89a373c64a86"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00054-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00054-of-00068.parquet",
+    "bytes": 104824544,
+    "sha256": "00c30ed60d5b1fb2ee6ae2ea185ce219fc306e5020730776129e6be44d8dc416"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00052-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00052-of-00068.parquet",
+    "bytes": 100371594,
+    "sha256": "2c17fdd17dd9eecb437582909589b18029e7e589148dcde59c262946f257e0a0"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00055-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00055-of-00068.parquet",
+    "bytes": 93193888,
+    "sha256": "99f7323138d5a8c108d37ac9a3bf9f151266d336e415844573a1252859d5d231"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00053-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00053-of-00068.parquet",
+    "bytes": 97357606,
+    "sha256": "439e258935e12c8ec465af1b019b14b9ec86065382ebc76ba6c0451d6174574f"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00056-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00056-of-00068.parquet",
+    "bytes": 102551921,
+    "sha256": "cbbde6d6d7106076e750e3acede1268a34141f06ab2e385ff6b9497be70a4ff2"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00057-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00057-of-00068.parquet",
+    "bytes": 109823105,
+    "sha256": "10f3dd7c420d858f0bb9f757da2bef03d04f92f1442154c87cecb436fc92486e"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00059-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00059-of-00068.parquet",
+    "bytes": 95925961,
+    "sha256": "c3705f9fd80d1bd901379d2a8607b912c8ad92f6df25b5fa64e078ef9a17ec0a"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00060-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00060-of-00068.parquet",
+    "bytes": 102651318,
+    "sha256": "5031aaaf386270ce438a64dbcd5bcffffdebccaf0f0042215c2bd842d4ca17f2"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00061-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00061-of-00068.parquet",
+    "bytes": 100544120,
+    "sha256": "f295b76140920750a8cae51b61c4ef62bd2c2f4a88841d4219f91b6ab97d5832"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00058-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00058-of-00068.parquet",
+    "bytes": 102355558,
+    "sha256": "e984abc0a73fa57aaa15a4b61116685ec0a3881329f418b6818cdb7648e1977d"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00063-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00063-of-00068.parquet",
+    "bytes": 100566219,
+    "sha256": "3353b26b6641989032d04e0a3a4b83fd3c96ee5aabbedc9db1c89effb717e449"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00062-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00062-of-00068.parquet",
+    "bytes": 99484679,
+    "sha256": "afedadfedcfc40526973b12123d8dd9b738b4f5b16afd9b7437a86cdec22d06b"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00064-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00064-of-00068.parquet",
+    "bytes": 99350199,
+    "sha256": "a1739a647205459c4b2ce8b6dbe8f5ec5946eb04c557c93f7f89c200c9bf4cbe"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00065-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00065-of-00068.parquet",
+    "bytes": 101606924,
+    "sha256": "4f1fc2953191f317b0ccacf594c7ef1629198d56860f6c4dd7f4b9341c5fc634"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00067-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00067-of-00068.parquet",
+    "bytes": 99118455,
+    "sha256": "c1066dc91aba54702ca87000a7a78548775481f508794e8e97fae41a9570bae0"
+  },
+  {
+    "source": "lmms-lab-encoder/VQAv2",
+    "revision": "32665d35052eb4a6d4414851c3c829a72754915a",
+    "url": "https://huggingface.co/datasets/lmms-lab-encoder/VQAv2/resolve/32665d35052eb4a6d4414851c3c829a72754915a/data/validation-00066-of-00068.parquet",
+    "path": "data/raw/hf/lmms-lab-encoder/VQAv2/data/validation-00066-of-00068.parquet",
+    "bytes": 102862641,
+    "sha256": "6e3dd1f39a80799af79cb14aec69f0ffd71a680bf0b549c2088012e80a0609dd"
+  }
+]

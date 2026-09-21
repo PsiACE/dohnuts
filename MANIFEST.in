@@ -1,0 +1,13 @@
+recursive-include docs *.md
+recursive-include docs/figures *.svg *.csv *.json
+include MODEL_CARD.md
+include LICENSE
+include NOTICE
+recursive-include results *.md *.csv *.json
+recursive-include scripts *.py
+recursive-include tests *.py *.json
+recursive-include data/manifests *.json *.txt
+include assets/dohnuts-logo.png
+exclude docs/naming-and-writing.md
+exclude docs/versioning.md
+exclude assets/logo-notes.md

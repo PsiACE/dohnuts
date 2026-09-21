@@ -1,0 +1,66 @@
+{
+  "checkpoint": {
+    "format_version": 1,
+    "project": "dohnuts",
+    "distribution": "dohnuts",
+    "base_model": "Qwen/Qwen3.5-0.8B",
+    "base_revision": "2fc06364715b967f1860aea9cf38778875588b17",
+    "adapter": "qwen3.5",
+    "lora_rank": 8,
+    "image_pixels": 262144,
+    "max_length": 2048,
+    "backend": {
+      "linear_patch": true,
+      "triton_convolution": true,
+      "experimental_rocm_sdpa": true,
+      "fused_norm_and_swiglu": true,
+      "shared_prefix": true,
+      "frozen_vision_cache_MiB": 128
+    },
+    "inference": "merged LoRA, BF16, fused operations, shared-prefix parallel candidate scoring",
+    "source_hashes": {
+      "train": "22c5ba82b2b9c69a0a9ce9378a83bb50004478031a3d1e2167a973cda881ed94",
+      "dev": "04b3cf11acece13f4bb44842c7a55f11c9c30d6ed99819246f5676d6da6497a9",
+      "calibration": "c96f04a195ef39c996b4c42d49f467e7a2d8bb0ef248a9d865ae5af6ece84482",
+      "test": "30504c618ab7a72a91ff14520d2e79552f47ce16519f1a7d96c64858d7a5ad79"
+    },
+    "selected_step": 3600,
+    "selection": "maximum development macro accuracy within the run; no test selection",
+    "seed": 42,
+    "dev_macro_accuracy": 0.7783954326923077,
+    "temperatures": {
+      "choice": 1.8172028064727783,
+      "noul": 3.5866143703460693,
+      "score": 1.2567481994628906
+    },
+    "weights_sha256": "196be33a0282537bcd821e2115643b352d0ad2a0bbaf7b242a1b7fe5bd96cfdf",
+    "version": "0.1.0",
+    "model_id": "Dohnuts-0.1.0-0.8B"
+  },
+  "files": {
+    "development.csv": {
+      "sha256": "52147b7e90ba77835a4d066e3a193ef1c6966a75357df3f4c8512403b404efc0",
+      "rows": 260
+    },
+    "latency-samples.csv": {
+      "sha256": "a2f37884d7e334a638cd74ab86296aa34352ab943e431cac83fce91fc64df305",
+      "rows": 440
+    },
+    "quality.csv": {
+      "sha256": "c55e86ebab889bf2d45a991fb98285928729f5c1e6de142c7a33db7452f56c30",
+      "rows": 52
+    },
+    "reliability.csv": {
+      "sha256": "b6ca6d7cc42ebf46275bc86a9fd88af9f20c1a5459eb66dab3a4936ef33dd38f",
+      "rows": 780
+    },
+    "training-resources.csv": {
+      "sha256": "746d6d8cedcf2226945c4a7387c388f26271e18aa73c3ac7277a0416e7725081",
+      "rows": 14317
+    },
+    "training.csv": {
+      "sha256": "9235920f5d24a3cf634fdd55d61e3ed0df6f08dcf2696f3c3971cb0f2b7e5b5a",
+      "rows": 361
+    }
+  }
+}

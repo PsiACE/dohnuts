@@ -1,0 +1,24 @@
+{
+  "repository": "https://github.com/fstandhartinger/jevbench",
+  "tag": "v1.2.2",
+  "revision": "e105a48f8cdb7f3babb3594424f73e5d7bdc97b9",
+  "files": {
+    "datasets/public/original.jsonl": "5c2414edb3006b8bfcb70fda433f0f9ca015759433849f8d3104328a1f7c4180",
+    "datasets/public/easy.jsonl": "231df3c2c8e88a1a8c137ebe85de96ba70fabd330849098ac7b3c52c70b7172b",
+    "datasets/public/hard.jsonl": "89e9e6becb33ed88c1de7d42dcc87531b2fb64cfaef4e1986faf7c37b3f80ebb",
+    "jevbench/adapters/base.py": "fdddc42e4f71d774096f806c4ee844cc4c4b428385f01a017cb64153d7c089f4",
+    "jevbench/runner.py": "15dd3ab9b3c111f3f4f47b9d9b657fa87d0f0d52d208c79c6ecf64cbf88cba7d",
+    "jevbench/scoring.py": "6aa17d212ea20a3eeb6876149367842e8462c11dcb54d73df062fb406368331e",
+    "jevbench/summarize.py": "aa5f24da407d004cd80bad1cd957b6987aba152591084c096d1de51dd9775cbe",
+    "jevbench/metrics.py": "4038c8423ad1cf28601afb6babe777b71f08e379b9ca125b09b52c0ac7d60515",
+    "jevbench/composite_v12.py": "2c06af8f4c1ea1ab91756de42677daddd8a4d47f11e62c9b3fab06e520ff93cc",
+    "results/v1.2/jevbench-v1.2-per-task.json": "0a8146ea994807b943b663edb34c0fdc05d35c702f9dfc792006f0edf30cbc7b"
+  },
+  "public_counts": {
+    "easy": 48,
+    "standard": 72,
+    "hard": 111
+  },
+  "official_total": 534,
+  "missing": 303
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "source": "MASSIVE 1.1",
+    "url": "https://amazon-massive-nlu-dataset.s3.amazonaws.com/amazon-massive-dataset-1.1.tar.gz",
+    "path": "data/raw/massive/massive-1.1.tar.gz",
+    "bytes": 40251390,
+    "sha256": "4cba5faa11c71437928e17cb1b9b3d8b8e727e7ea363a3a9a8045e19c0491577"
+  },
+  {
+    "source": "SuperGLUE BoolQ",
+    "url": "https://dl.fbaipublicfiles.com/glue/superglue/data/v2/BoolQ.zip",
+    "path": "data/raw/boolq/BoolQ.zip",
+    "bytes": 4118001,
+    "sha256": "853fbe7922f70c59629f06a39e8d9ca440c3d740e760fd3b87a5ddf3dcba2436"
+  },
+  {
+    "source": "CLEVR 1.0",
+    "url": "https://dl.fbaipublicfiles.com/clevr/CLEVR_v1.0.zip",
+    "path": "data/raw/clevr/CLEVR_v1.0.zip",
+    "bytes": 19021600724,
+    "sha256": "5cd61cf1096ed20944df93c9adb31e74d189b8459a94f54ba00090e5c59936d1"
+  },
+  {
+    "source": "Rico",
+    "url": "https://storage.googleapis.com/crowdstf-rico-uiuc-4540/rico_dataset_v0.1/unique_uis.tar.gz",
+    "path": "data/raw/rico/unique_uis.tar.gz",
+    "bytes": 6471262799,
+    "sha256": "53f0374357273f22aee5359b7d9254b4bd9fc80f4f0c3aa9133899ee2d6976f1"
+  },
+  {
+    "source": "A-OKVQA 1.0",
+    "url": "https://prior-datasets.s3.us-east-2.amazonaws.com/aokvqa/aokvqa_v1p0.tar.gz",
+    "path": "data/raw/aokvqa/aokvqa_v1p0.tar.gz",
+    "bytes": 3661719,
+    "sha256": "3992b488babc0c1147f0def18c7a55274aeeb37ab668cf80226b8f62ee35a8e1"
+  },
+  {
+    "source": "BANKING77",
+    "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/train.csv",
+    "path": "data/raw/banking77/train.csv",
+    "bytes": 839073,
+    "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b"
+  },
+  {
+    "source": "BANKING77",
+    "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/test.csv",
+    "path": "data/raw/banking77/test.csv",
+    "bytes": 239961,
+    "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d"
+  },
+  {
+    "source": "BANKING77",
+    "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/categories.json",
+    "path": "data/raw/banking77/categories.json",
+    "bytes": 2036,
+    "sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63"
+  },
+  {
+    "source": "ScreenQA",
+    "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/answers_and_bboxes/train.json",
+    "path": ".cache/upstream/screen-qa/answers_and_bboxes/train.json",
+    "bytes": 20193256,
+    "sha256": "c76d4a032e65f71801c83d05f878804a3d8b245e298cca00c254a2ad3f19d11c"
+  },
+  {
+    "source": "ScreenQA",
+    "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/answers_and_bboxes/validation.json",
+    "path": ".cache/upstream/screen-qa/answers_and_bboxes/validation.json",
+    "bytes": 5155868,
+    "sha256": "1e32e5e06ea9bfe3421baceae800ee22de2481663b818ff47f9c6350b36ca138"
+  },
+  {
+    "source": "ScreenQA",
+    "url": "https://raw.githubusercontent.com/google-research-datasets/screen_qa/1dfdbccaf56948821b5fa8ffe5d186fe4751e46d/answers_and_bboxes/test.json",
+    "path": ".cache/upstream/screen-qa/answers_and_bboxes/test.json",
+    "bytes": 5174324,
+    "sha256": "0cb48a9d123343b3f7c025a8332411ae8a6251c366baf1e588c76949bcfb290f"
+  }
+]

@@ -1,0 +1,31 @@
+Dohnuts
+Copyright 2026 PsiACE and Dohnuts contributors.
+
+The source code is licensed under Apache-2.0. Model weights and source datasets
+are separate artifacts with their own terms.
+
+Qwen3.5-0.8B is developed by the Qwen team at Alibaba Cloud and is licensed under
+Apache-2.0. Dohnuts trains language LoRA adapters and a decision head over this
+base. Base weights are downloaded from the original publisher.
+https://huggingface.co/Qwen/Qwen3.5-0.8B
+
+The RLCD objective and evaluation protocols follow Laya by Nandha Kishor M and
+Laya Vision by Reed Richards. Both projects are licensed under Apache-2.0.
+Pinned references and implementation details are recorded in docs/rlcd.md and
+docs/upstream-alignment.md.
+https://github.com/NandhaKishorM/laya
+https://github.com/r33drichards/laya-vision
+
+JevBench supplies the public benchmark tasks and scoring protocol. Published Jev
+outcomes are reference measurements, not locally executed Jev predictions.
+https://github.com/fstandhartinger/jevbench
+
+Bub supplies the agent SDK. Flash Linear Attention supplies fused operators.
+They are installed as dependencies, not bundled copies of their source code.
+https://github.com/bubbuild/bub
+https://github.com/fla-org/flash-linear-attention
+
+Dataset sources, provenance, and terms are listed in docs/data-and-evaluation.md.
+Raw datasets, source images, and third-party model weights are not distributed
+with this source repository or Python package. Reference names do not imply
+endorsement by their authors.
