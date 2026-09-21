@@ -8,6 +8,15 @@
   "numpy": "2.5.3",
   "figures": [
     {
+      "name": "overview",
+      "title": "Model overview and benchmarks",
+      "notes": [
+        "Dohnuts-0.1.0-0.8B, seed 42, update 3600; one RX 7900 XTX.",
+        "Benchmark values come from chart-data.csv; held-out macro accuracy comes from results/quality.csv.",
+        "Panel captions identify evaluation coverage, reference exposure, precision and warm-cache conditions."
+      ]
+    },
+    {
       "name": "01_jevbench",
       "title": "JevBench: decision types and difficulty",
       "notes": [
@@ -68,6 +77,7 @@
     "04_vision.svg": "4001f6d79b66283939deb0fdca09e39d899055187fd25495b5d2f2beefb883f7",
     "05_latency.svg": "4b515d7e439c6a87e069d088a86faf15746d8591d950116f4e9c7ede4154b7e1",
     "06_agreement.svg": "a4cfa64f1b211bf15f3326f8e82a5ff656409b191a0cc96e7b0b363765ce7822",
-    "chart-data.csv": "3e912fc30bc4ae0a39c55c2191c79459629582f720ca9410b44ec88df50c0b54"
+    "chart-data.csv": "3e912fc30bc4ae0a39c55c2191c79459629582f720ca9410b44ec88df50c0b54",
+    "overview.svg": "91dcae40936da68953638c6ffcdfca750f718b6883fed0affba376cad8da8349"
   }
 }

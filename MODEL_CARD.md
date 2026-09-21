@@ -6,6 +6,8 @@ ordered scores. Independent questions about one input share computation in a
 single forward pass. The interface returns decisions without generating reasoning
 or free-form answers.
 
+![Dohnuts 0.1.0 model overview and benchmarks](docs/figures/overview.svg)
+
 ## Model details
 
 | Property | Value |
@@ -115,6 +117,28 @@ objective follows the pinned Laya and Laya Vision implementations. Its four
 samples perturb decision logits; they are not generated trajectories. LoRA is
 merged before temperature fitting and final evaluation. The
 [RLCD specification](docs/rlcd.md) gives the objective and fixed schedule.
+
+### Training datasets
+
+The 26 training groups are derived from the following source datasets. Hub links
+identify the datasets; the [download manifests](data/manifests/) pin the files,
+revisions, and checksums actually used, including official archives downloaded
+outside the Hub.
+
+| Task family | Sources |
+| --- | --- |
+| Intent and topic classification | [MASSIVE 1.1](https://huggingface.co/datasets/AmazonScience/massive) (en-US, zh-CN), [AG News](https://huggingface.co/datasets/fancyzhx/ag_news), [BANKING77](https://huggingface.co/datasets/PolyAI/banking77) |
+| Entailment, emotion, and Boolean QA | [XNLI](https://huggingface.co/datasets/facebook/xnli) (en, zh), [emotion](https://huggingface.co/datasets/dair-ai/emotion), [BoolQ](https://huggingface.co/datasets/google/boolq) (SuperGLUE distribution) |
+| Visual decisions | [CLEVR 1.0](https://cs.stanford.edu/people/jcjohns/clevr/), [A-OKVQA](https://huggingface.co/datasets/HuggingFaceM4/A-OKVQA), [ScienceQA](https://huggingface.co/datasets/derek-thomas/ScienceQA) (image subset), [VQAv2](https://huggingface.co/datasets/lmms-lab-encoder/VQAv2) (yes/no) |
+| Screen region decisions | [ScreenQA](https://github.com/google-research-datasets/screen_qa), with [Rico](https://www.interactionmining.org/archive/rico) screenshots and view hierarchies |
+| Typed decisions | [LocalLLaMA/typed-decisions](https://huggingface.co/datasets/LocalLLaMA/typed-decisions), using public soft teacher distributions |
+| Retrieval and relevance | [Amazon ESCI](https://github.com/amazon-science/esci-data) (en, es, ja), [WikiQA](https://huggingface.co/datasets/microsoft/wiki_qa) |
+| Policy and contract decisions | [ShARC](https://huggingface.co/datasets/UCLNLP/sharc), [ContractNLI](https://stanfordnlp.github.io/contract-nli/) |
+| Spam and phishing | [SpamAssassin](https://spamassassin.apache.org/old/publiccorpus/), [Nazario phishing corpus](https://monkey.org/~jose/phishing/), [UCI SMS Spam Collection](https://huggingface.co/datasets/ucirvine/sms_spam) |
+
+JevBench tasks and the frozen Laya benchmark inputs are evaluation-only.
+The [data protocol](docs/data-and-evaluation.md) describes source-specific
+conversions, grouped partitions, exclusions, and terms.
 
 ## Limitations
 

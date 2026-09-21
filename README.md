@@ -14,6 +14,8 @@ The 0.8B model runs locally on a consumer GPU.
 
 [Model](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B) · [Model card](MODEL_CARD.md) · [Documentation](docs/README.md) · [Benchmarks](docs/figures/README.md)
 
+![Dohnuts 0.1.0 model overview and benchmarks](docs/figures/overview.svg)
+
 ## One message, several decisions
 
 Route a support request and check whether it asks for a refund in the same call:

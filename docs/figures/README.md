@@ -2,9 +2,9 @@
 
 Seed 42, update 3,600. Figures use saved evaluation results with fixed Laya multilingual and Laya Vision references.
 
-[Chart data](chart-data.csv) · [Model identity and checksums](manifest.json)
+[Model overview](overview.svg) · [Chart data](chart-data.csv) · [Model identity and checksums](manifest.json)
 
-The figures use SVG with editable text. Captions document each evaluation protocol. One seed does not provide confidence intervals across seeds.
+The figures are available as SVG. Captions document each evaluation protocol. One seed does not provide confidence intervals across seeds.
 
 ## JevBench: decision types and difficulty
 
