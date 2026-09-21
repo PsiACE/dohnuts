@@ -34,7 +34,7 @@ pinned at `e105a48f8cdb7f3babb3594424f73e5d7bdc97b9`. Its public tasks contain
 534-item leaderboard are not distributed, including the entire judge tier.
 
 ```bash
-.venv/bin/python scripts/run_jevbench.py
+pdm run python scripts/run_jevbench.py
 ```
 
 Each task receives one serial `Predictor.predict` call with its original state,
@@ -61,9 +61,9 @@ measurements in its comparison chart. Run them on the exported Dohnuts checkpoin
 ```bash
 git clone --branch research https://github.com/NandhaKishorM/laya.git .cache/upstream/laya-research
 git -C .cache/upstream/laya-research checkout --detach 28d43add7e47ce502489c9433310d55276c64e0f
-uv pip install --python .venv/bin/python datasets==5.0.1
-.venv/bin/python scripts/prepare_laya_benchmark.py
-.venv/bin/python scripts/run_laya_benchmark.py
+pdm install --check --prod -G train
+pdm run python scripts/prepare_laya_benchmark.py
+pdm run python scripts/run_laya_benchmark.py
 ```
 
 Preparation preserves the upstream builders, seed 13, candidate order, and
@@ -102,13 +102,12 @@ and paired JevBench outcomes. The reference checkpoints are Laya multilingual
 and Laya Vision. The English Laya entry in JevBench's published results is a
 different checkpoint and must not be relabeled as Laya multilingual.
 
-Install plotting tools in a separate environment to keep the training runtime
-unchanged, then render the completed run:
+Install the locked plotting group, then render the completed run. This group
+does not require model dependencies:
 
 ```bash
-uv venv --python 3.12 .cache/plot-venv
-uv pip install --python .cache/plot-venv/bin/python matplotlib==3.11.2 numpy==2.5.3
-.cache/plot-venv/bin/python scripts/plot_model_card.py --run runs/v1
+pdm install --check --no-default --no-self -G plot
+pdm run python scripts/plot_model_card.py --run runs/v1
 ```
 
 `runs/v1/figures/README.md` indexes the PNG, SVG and PDF figures. The directory

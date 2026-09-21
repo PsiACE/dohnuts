@@ -7,6 +7,10 @@ to provide one batch decision tool and persistent session tapes.
 
 Follow the [runtime and checkpoint setup](inference.md) first.
 
+```bash
+pdm install --check --prod -G agent
+```
+
 ```python
 from pathlib import Path
 
@@ -17,6 +21,7 @@ predictor = Predictor.from_checkpoint("PsiACE/Dohnuts-0.1.0-0.8B")
 framework, agent = create_agent(
     predictor, workspace=Path.cwd(), tape_directory=Path("runs/agent-tapes")
 )
+
 
 async def decide():
     command = ',dohnuts.decide state=\'{"message":"Please refund this invoice."}\' '

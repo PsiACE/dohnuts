@@ -104,7 +104,7 @@ exact training ETA. Hardware microbenchmark throughput is not API throughput.
 ## Measurement
 
 ```bash
-.venv/bin/python scripts/benchmark.py dohnuts --checkpoint runs/v1/checkpoint --output runs/v1/benchmarks/dohnuts.jsonl
+pdm run python scripts/benchmark.py dohnuts --checkpoint runs/v1/checkpoint --output runs/v1/benchmarks/dohnuts.jsonl
 ```
 
 The benchmark measures complete prediction calls over text and image workloads,

@@ -1,8 +1,7 @@
 """Build the static website from the repository's existing Markdown."""
 
-from pathlib import Path
 import tomllib
-
+from pathlib import Path
 
 metadata = tomllib.loads((Path(__file__).parents[1] / "pyproject.toml").read_text())
 project = "Dohnuts"

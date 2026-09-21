@@ -6,13 +6,26 @@ from types import MethodType
 def fused_rms_norm(module, hidden):
     from fla.modules.layernorm import rms_norm
 
-    return rms_norm(hidden, module._dohnuts_norm_weight, None, eps=module.eps)
+    # FLA 0.5.2 accepts bias=None, but its annotation omits None.
+    return rms_norm(
+        hidden,
+        module._dohnuts_norm_weight,
+        None,  # ty: ignore[invalid-argument-type]
+        eps=module.eps,
+    )
 
 
 def fused_gated_norm(module, hidden, gate):
     from fla.modules.fused_norm_gate import rms_norm_gated
 
-    return rms_norm_gated(hidden, gate, module.weight, None, eps=module.variance_epsilon)
+    # FLA 0.5.2 accepts bias=None, but its annotation omits None.
+    return rms_norm_gated(
+        hidden,
+        gate,
+        module.weight,
+        None,  # ty: ignore[invalid-argument-type]
+        eps=module.variance_epsilon,
+    )
 
 
 def fused_mlp(module, hidden):
@@ -68,7 +81,8 @@ def enable_linear_patch_embedding(visual):
 def triton_causal_conv1d(hidden_states, weight, bias=None, activation=None, **kwargs):
     from fla.modules.conv import causal_conv1d
 
-    output, _ = causal_conv1d(
+    # FLA's input_guard decorator exposes a Tensor/callable union for this function.
+    output, _ = causal_conv1d(  # ty: ignore[call-non-callable]
         hidden_states.transpose(1, 2),
         weight=weight,
         bias=bias,

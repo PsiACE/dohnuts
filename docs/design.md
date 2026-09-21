@@ -78,7 +78,7 @@ identical screenshots crossed splits under different source IDs. Run them when
 changing the corresponding behavior:
 
 ```bash
-.venv/bin/python -m unittest discover -s tests
+make test
 ```
 
 Tests assert observable behavior or a known failure case. Internal allocation,

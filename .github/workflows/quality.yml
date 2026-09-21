@@ -1,0 +1,48 @@
+name: Quality
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: quality-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.12"
+          version: "2.29.2"
+          cache: true
+      - run: pdm install --check --no-default --no-self -G quality
+      - run: make lint
+      - run: make build
+
+  tests:
+    runs-on: ubuntu-24.04
+    env:
+      HF_HUB_OFFLINE: "1"
+      TRANSFORMERS_OFFLINE: "1"
+    steps:
+      - uses: actions/checkout@v7
+      - name: Make room for the locked ROCm runtime
+        # Torch alone occupies about 14 GiB; these SDKs are unused by this job.
+        run: sudo rm -rf /usr/local/lib/android /usr/share/dotnet
+      - uses: pdm-project/setup-pdm@v4
+        with:
+          python-version: "3.12"
+          version: "2.29.2"
+      - run: pdm --no-cache install --check -G train -G agent -G quality
+      - run: pdm run typecheck
+      - name: Run pytest
+        run: make test

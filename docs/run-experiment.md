@@ -2,14 +2,12 @@
 
 Use Python 3.12 and a working PyTorch ROCm installation on the RX 7900 XTX.
 The recorded training environment is preserved in
-`data/manifests/environment-freeze.txt`. Install the ROCm PyTorch wheels before
-installing the package so dependency resolution does not select CUDA wheels.
+`data/manifests/environment-freeze.txt`. Follow the [PDM setup](inference.md)
+first; the package sources and lock file select the ROCm wheels.
 
 ```bash
-uv venv --python 3.12
-uv pip install --python .venv/bin/python torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/rocm6.4
-uv pip install --python .venv/bin/python -e '.[train,agent]'
-.venv/bin/python scripts/run_experiment.py
+pdm install --check --prod -G train -G agent
+pdm run python scripts/run_experiment.py
 ```
 
 The Qwen3.5 adapter limits PyTorch's caching allocator to 80% of visible VRAM,
@@ -52,7 +50,7 @@ Base initialization and checkpoint initialization use the same 26-group mixture
 and training workflow. To initialize from an exported checkpoint:
 
 ```bash
-.venv/bin/python scripts/run_experiment.py --initialize-from runs/v1/checkpoint --output runs/domain
+pdm run python scripts/run_experiment.py --initialize-from runs/v1/checkpoint --output runs/domain
 ```
 
 The checkpoint supplies the starting parameters and a fresh optimizer/schedule.

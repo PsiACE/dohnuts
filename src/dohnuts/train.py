@@ -9,6 +9,7 @@ import time
 from collections import Counter, deque
 from dataclasses import asdict
 from pathlib import Path
+from typing import cast
 
 import torch
 
@@ -286,7 +287,7 @@ def train(config, run, *, resume=False, adapter=None, initialize_from=None):
             stats = Counter()
             finite = torch.ones((), dtype=torch.bool, device="cuda")
             step_start = time.perf_counter()
-            for micro in range(config["accumulation"]):
+            for _micro in range(config["accumulation"]):
                 batch, key, ids = next(iterator)
                 inputs, positions, mask, target, ordinal = batch
                 logits = model(inputs, positions)
@@ -306,6 +307,8 @@ def train(config, run, *, resume=False, adapter=None, initialize_from=None):
             step += 1
             if step == 1 or step % config["log_every"] == 0:
                 torch.cuda.synchronize()
+                # Counter's stub assumes int values; these accumulators contain tensors.
+                totals = cast(list[torch.Tensor], list(stats.values()))
                 emit(
                     run / "metrics.jsonl",
                     {
@@ -313,7 +316,7 @@ def train(config, run, *, resume=False, adapter=None, initialize_from=None):
                         "step": step,
                         "elapsed_s": elapsed_before_resume + time.perf_counter() - start_time,
                         "step_s": time.perf_counter() - step_start,
-                        **dict(zip(stats, torch.stack(list(stats.values())).cpu().tolist())),
+                        **dict(zip(stats, torch.stack(totals).cpu().tolist())),
                         "grad_norm": float(grad_norm),
                         "lr": optimizer.param_groups[0]["lr"],
                         "consumed": dict(consumed),

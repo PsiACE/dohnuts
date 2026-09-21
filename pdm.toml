@@ -1,0 +1,2 @@
+# Package-to-index bindings are required for the recorded ROCm runtime.
+use_uv = false
