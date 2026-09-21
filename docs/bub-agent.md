@@ -5,6 +5,9 @@ Dohnuts provides one decision tool through Bub. The `agent` extra pins Bub main 
 [Python SDK](https://github.com/bubbuild/bub/blob/9bf70488e22a44eeb875a9d55d9a7d352b82e381/website/src/content/docs/docs/build/sdk.md)
 to provide one batch decision tool and persistent session tapes.
 
+Follow the [runtime and checkpoint setup](inference.md) first. The Hub example
+requires access to the private checkpoint repository.
+
 ```python
 from pathlib import Path
 
