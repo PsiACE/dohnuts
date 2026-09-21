@@ -1,0 +1,97 @@
+/* Keep Furo's layout and controls; add only the Dohnuts brand treatment. */
+body {
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-stack--monospace: ui-monospace, "SFMono-Regular", Consolas, monospace;
+  --code-font-size: 0.875rem;
+  --toc-font-size: 0.875rem;
+  --toc-title-font-size: 0.875rem;
+}
+
+.sidebar-brand {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.sidebar-logo {
+  width: 3.5rem;
+  margin: 0;
+}
+
+.sidebar-brand-text {
+  font-size: 1.5rem;
+  font-weight: 750;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+
+a {
+  text-underline-offset: 0.18em;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+label:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 3px;
+}
+
+.main,
+.content {
+  min-width: 0;
+}
+
+.highlight pre {
+  border: 1px solid var(--color-background-border);
+  border-radius: 0.3rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+table.docutils {
+  box-shadow: none;
+  border: 1px solid var(--color-background-border);
+}
+
+article > .image-reference {
+  float: right;
+  width: 13rem;
+  max-width: 32%;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+article > .image-reference > img {
+  width: 100%;
+  margin: 0;
+}
+
+#dohnuts > h1 {
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  margin-bottom: 0.25rem;
+}
+
+#dohnuts > h1 + p {
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+
+#dohnuts > section {
+  clear: both;
+}
+
+@media (max-width: 40rem) {
+  article > .image-reference {
+    width: 5.5rem;
+    margin-left: 0.75rem;
+  }
+}

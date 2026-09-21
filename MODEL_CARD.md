@@ -6,8 +6,6 @@ ordered scores. Independent questions about one input share computation in a
 single forward pass. The interface returns decisions without generating reasoning
 or free-form answers.
 
-![Dohnuts 0.1.0 model overview and benchmarks](docs/figures/overview.svg)
-
 ## Model details
 
 | Property | Value |
@@ -43,6 +41,8 @@ definitions, images, and response fields, or [Bub integration](docs/bub-agent.md
 for agent use.
 
 ## Evaluation
+
+![Dohnuts 0.1.0 model overview and benchmarks](docs/figures/overview.svg)
 
 The model achieves **78.21% macro accuracy** over 26 held-out dataset groups
 containing 180,031 decisions. Each group contributes equally to this mean.
@@ -121,7 +121,7 @@ merged before temperature fitting and final evaluation. The
 ### Training datasets
 
 The 26 training groups are derived from the following source datasets. Hub links
-identify the datasets; the [download manifests](data/manifests/) pin the files,
+identify the datasets; the [download manifests](https://github.com/PsiACE/dohnuts/tree/main/data/manifests) pin the files,
 revisions, and checksums actually used, including official archives downloaded
 outside the Hub.
 
@@ -182,3 +182,10 @@ own research-use terms.
 The checkpoint is not offered as a commercially cleared model. See the
 [data reference](docs/data-and-evaluation.md#release-assets-and-terms) and
 [attributions](NOTICE).
+
+```{toctree}
+:hidden:
+
+Benchmark comparisons <docs/figures/README>
+Evaluation results <results/README>
+```
