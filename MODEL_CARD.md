@@ -26,8 +26,7 @@ classifying content, estimating whether a condition holds, rating relevance, or
 answering visual questions. An application supplies the choices and decides how
 to act on the returned probabilities.
 
-The checkpoint repository is private. After [setting up the runtime](docs/inference.md)
-and authenticating an account with repository access, load it from Hugging Face:
+After [setting up the runtime](docs/inference.md), load the model from Hugging Face:
 
 ```python
 from dohnuts.predictor import Predictor
@@ -148,12 +147,14 @@ and a [figure manifest](docs/figures/manifest.json) accompany the comparisons.
 
 ## License
 
-The code is licensed under [Apache-2.0](LICENSE). The decision weights are held
-in a private repository and are not offered for public distribution. The code
-license does not grant rights to the checkpoint, base model, or source data.
+The code is licensed under [Apache-2.0](LICENSE). The decision weights are provided
+under [CC BY-NC-SA 4.0](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B/blob/main/LICENSE)
+for non-commercial research. This grant covers the Dohnuts LoRA and decision-head
+contributions; the base model and source data retain their own terms.
 
 The Qwen3.5-0.8B base is Apache-2.0. [ScienceQA's dataset terms](https://github.com/lupantech/ScienceQA#warning-licenses)
-include non-commercial and share-alike restrictions; other sources have their own research-use terms.
+include non-commercial and share-alike restrictions; other sources have their
+own research-use terms.
 The checkpoint is not offered as a commercially cleared model. See the
 [data reference](docs/data-and-evaluation.md#release-assets-and-terms) and
 [attributions](NOTICE).

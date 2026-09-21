@@ -12,12 +12,9 @@ input. That is our take on System 1.
 The Python toolkit covers training, inference, evaluation, and agent integration.
 The 0.8B model runs locally on a consumer GPU.
 
-[Checkpoint (restricted access)](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B) · [Model card](MODEL_CARD.md) · [Documentation](docs/README.md) · [Benchmarks](docs/figures/README.md)
+[Model](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B) · [Model card](MODEL_CARD.md) · [Documentation](docs/README.md) · [Benchmarks](docs/figures/README.md)
 
 ## One message, several decisions
-
-The Hub example requires an account with access to the private checkpoint
-repository. Locally trained checkpoints use the same loader.
 
 Route a support request and check whether it asks for a refund in the same call:
 
@@ -72,6 +69,7 @@ additional project budget. The main ingredient was time.
 
 ## License
 
-The code is licensed under [Apache-2.0](LICENSE). The
-[model card](MODEL_CARD.md#license) describes the separate checkpoint terms
-and training-data restrictions.
+The code is licensed under [Apache-2.0](LICENSE). The model weights are licensed
+under [CC BY-NC-SA 4.0](https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B/blob/main/LICENSE)
+for non-commercial research. See the [model card](MODEL_CARD.md#license) for
+checkpoint terms and training-data restrictions.

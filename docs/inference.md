@@ -13,13 +13,10 @@ uv pip install --python .venv/bin/python -e .
 
 ## Load a checkpoint
 
-The checkpoint repository is private. Hub loading requires an account with
-repository access, authenticated with `hf auth login`. A locally trained export
-does not require Hub access to the Dohnuts checkpoint.
-
 Load the model by its Hugging Face repository ID. The loader downloads the
 decision weights and the exact Qwen3.5-0.8B revision recorded in the checkpoint.
-Downloads use the Hugging Face cache and are reused by later calls.
+Downloads use the Hugging Face cache and are reused by later calls. Both
+repositories are public; downloading them does not require a Hugging Face login.
 
 Run Python examples with `.venv/bin/python` from the repository root:
 
