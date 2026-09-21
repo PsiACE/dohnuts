@@ -52,7 +52,7 @@ One workflow prepares the public-data mixture, trains with joint RLCD and
 cross-entropy, selects a checkpoint, calibrates it, and runs the evaluations:
 
 ```bash
-.venv/bin/python scripts/run_experiment.py
+pdm run python scripts/run_experiment.py
 ```
 
 The [training guide](docs/run-experiment.md) covers setup and resuming a run.

@@ -23,7 +23,7 @@
 The [behavior and regression tests](design.md#behavior-and-regression-tests)
 cover the prediction interface and known failure cases.
 
-For website contributors, see [Build the website](website.md).
+For contributors, see [Development](development.md) and [Build the website](website.md).
 
 ```{toctree}
 :hidden:
@@ -31,5 +31,6 @@ For website contributors, see [Build the website](website.md).
 Installation and inference <inference>
 Agent integration <bub-agent>
 Training and evaluation <run-experiment>
+Development <development>
 Build the website <website>
 ```

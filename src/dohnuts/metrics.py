@@ -1,6 +1,7 @@
 """Plot-ready distribution metrics; ECE uses top probability, never entropy."""
 
 from collections import defaultdict
+from typing import Any
 
 import numpy as np
 from sklearn.metrics import f1_score
@@ -29,7 +30,7 @@ def summarize(records, temperatures=None):
             indices = np.arange(len(p))
             values["score_mae"].append(float(abs((indices * p).sum() - (indices * target).sum())))
             values["rps"].append(float(((p.cumsum()[:-1] - target.cumsum()[:-1]) ** 2).mean()))
-    result = {k: float(np.mean(v)) for k, v in values.items() if k != "confidence"}
+    result: dict[str, Any] = {k: float(np.mean(v)) for k, v in values.items() if k != "confidence"}
     result["n"] = len(records)
     if not records:
         return result
@@ -40,9 +41,10 @@ def summarize(records, temperatures=None):
     for lo, hi in zip(np.linspace(0, 1, 16)[:-1], np.linspace(0, 1, 16)[1:]):
         mask = (np.array(values["confidence"]) > lo) & (np.array(values["confidence"]) <= hi)
         count = int(mask.sum())
-        confidence = float(np.array(values["confidence"])[mask].mean()) if count else None
-        accuracy = float(np.array(values["accuracy"])[mask].mean()) if count else None
+        confidence = accuracy = None
         if count:
+            confidence = float(np.array(values["confidence"])[mask].mean())
+            accuracy = float(np.array(values["accuracy"])[mask].mean())
             ece += count / len(records) * abs(confidence - accuracy)
         bins.append(
             {

@@ -1,5 +1,7 @@
 # Local environments and caches
 .venv/
+.pdm-python
+__pypackages__/
 __pycache__/
 .pytest_cache/
 .ruff_cache/

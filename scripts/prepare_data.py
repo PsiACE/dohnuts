@@ -286,7 +286,7 @@ def vision_sources():
                     image=path,
                     aliases=aliases,
                 )
-    for i, r in enumerate(parquet("lmms-lab-encoder/VQAv2", "data/validation-")):
+    for r in parquet("lmms-lab-encoder/VQAv2", "data/validation-"):
         if r.get("answer_type") != "yes/no":
             continue
         votes = [a["answer"] if isinstance(a, dict) else a for a in r["answers"]]
@@ -380,15 +380,18 @@ def screen_sources(audit):
                             or node.get("visibility", "visible") != "visible"
                         ):
                             continue
-                        l, t, rr, b = bounds
-                        if not (0 <= l < rr <= width and 0 <= t < b <= height) or bounds in seen:
+                        left, top, right, bottom = bounds
+                        if (
+                            not (0 <= left < right <= width and 0 <= top < bottom <= height)
+                            or bounds in seen
+                        ):
                             continue
                         seen.add(bounds)
                         candidates[j] = [
-                            round(l / width, 4),
-                            round(t / height, 4),
-                            round(rr / width, 4),
-                            round(b / height, 4),
+                            round(left / width, 4),
+                            round(top / height, 4),
+                            round(right / width, 4),
+                            round(bottom / height, 4),
                         ]
                     cache[image_id] = candidates
                 except (OSError, KeyError, ValueError, TypeError):

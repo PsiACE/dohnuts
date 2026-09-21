@@ -1,6 +1,6 @@
 [build-system]
-requires = ["setuptools>=77"]
-build-backend = "setuptools.build_meta"
+requires = ["pdm-backend>=2.4,<3"]
+build-backend = "pdm.backend"
 
 [project]
 name = "dohnuts"
@@ -8,7 +8,7 @@ version = "0.1.0"
 readme = "README.md"
 description = "Python tools for training, running, and evaluating Dohnuts models."
 license = "Apache-2.0"
-license-files = ["LICENSE"]
+license-files = ["LICENSE", "NOTICE"]
 requires-python = ">=3.12"
 dependencies = [
   "torch>=2.9",
@@ -24,14 +24,60 @@ dependencies = [
 train = ["pyarrow>=25", "scikit-learn>=1.9", "pandas>=3.0", "datasets>=4"]
 agent = ["bub @ git+https://github.com/bubbuild/bub.git@9bf70488e22a44eeb875a9d55d9a7d352b82e381"]
 
+[dependency-groups]
+quality = ["ruff==0.16.8", "ty==0.0.82", "prek>=0.3.1,<1", "pytest>=9,<10"]
+docs = ["sphinx==9.1.0", "furo==2025.12.19", "myst-parser==5.1.0"]
+plot = ["matplotlib==3.11.2", "numpy==2.5.3"]
+
 [project.urls]
 Homepage = "https://github.com/PsiACE/dohnuts"
 Documentation = "https://github.com/PsiACE/dohnuts/tree/main/docs"
 Models = "https://huggingface.co/PsiACE/Dohnuts-0.1.0-0.8B"
 Issues = "https://github.com/PsiACE/dohnuts/issues"
 
-[tool.setuptools.packages.find]
-where = ["src"]
+[tool.pdm]
+distribution = true
+requires-pdm = ">=2.29.2,<3"
+
+[tool.pdm.build]
+package-dir = "src"
+includes = ["src/dohnuts"]
+source-includes = [
+  "tests", "scripts", "docs", "results", "assets/dohnuts-logo.png",
+  "MODEL_CARD.md", "index.md", "Makefile", "NOTICE", "pdm.lock", "pdm.toml",
+  ".python-version", ".pre-commit-config.yaml",
+]
+
+[[tool.pdm.source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+exclude_packages = ["torch", "torchvision", "pytorch-triton-rocm"]
+
+[[tool.pdm.source]]
+name = "pytorch-rocm"
+url = "https://download.pytorch.org/whl/rocm6.4"
+include_packages = ["torch", "torchvision", "pytorch-triton-rocm"]
+exclude_packages = ["*"]
+
+[tool.pdm.scripts]
+lint = "ruff check ."
+format = "ruff format ."
+format-check = "ruff format --check ."
+typecheck = "ty check src"
+check = { composite = ["lint", "format-check", "typecheck"] }
+test = "pytest"
+docs = "sphinx-build -b html -W --keep-going -d build/doctrees -c docs . build/site"
+docs-serve = "python -m http.server 8000 --bind 127.0.0.1 --directory build/site"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["--strict-config", "--strict-markers"]
 
 [tool.ruff]
+target-version = "py312"
 line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "UP", "B", "PT"]
+# Keep existing zip truncation semantics; review strictness at each call site.
+ignore = ["B905"]

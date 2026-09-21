@@ -4,6 +4,7 @@ import json
 import math
 from collections.abc import Mapping
 from pathlib import Path
+from typing import Any
 
 import torch
 from huggingface_hub import snapshot_download
@@ -77,6 +78,8 @@ def render_question(state_text, question, *, has_image=False, adapter=None):
 
 
 class Predictor:
+    metadata: dict[str, Any]
+
     def __init__(self, model: DecisionModel):
         self.model = model
         self.image_pixels = IMAGE_PIXELS

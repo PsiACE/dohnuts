@@ -20,22 +20,26 @@ def plan_prefix(inputs, positions):
 class PrefixCache(DynamicCache):
     """Replace state tensors instead of overwriting values needed by backward."""
 
-    def update_conv_state(self, states, layer_idx, state_idx=0, conv_kernel_size=None, **kwargs):
+    def update_conv_state(
+        self, conv_states, layer_idx, state_idx=0, conv_kernel_size=None, **kwargs
+    ):
+        if conv_kernel_size is None:
+            raise ValueError("PrefixCache requires conv_kernel_size")
         layer = self.layers[layer_idx]
-        layer.device, layer.dtype = states.device, states.dtype
+        layer.device, layer.dtype = conv_states.device, conv_states.dtype
         if layer.has_previous_state[state_idx]:
-            states = torch.cat([layer.conv_states[state_idx], states], dim=-1)
+            conv_states = torch.cat([layer.conv_states[state_idx], conv_states], dim=-1)
         layer.conv_kernel_size[state_idx] = conv_kernel_size
-        layer.conv_states[state_idx] = states[..., -conv_kernel_size:]
+        layer.conv_states[state_idx] = conv_states[..., -conv_kernel_size:]
         layer.has_previous_state[state_idx] = True
         layer.is_conv_states_initialized[state_idx] = True
-        return states
+        return conv_states
 
-    def update_recurrent_state(self, states, layer_idx, state_idx=0, **kwargs):
+    def update_recurrent_state(self, recurrent_states, layer_idx, state_idx=0, **kwargs):
         layer = self.layers[layer_idx]
-        layer.recurrent_states[state_idx] = states
+        layer.recurrent_states[state_idx] = recurrent_states
         layer.is_recurrent_states_initialized[state_idx] = True
-        return states
+        return recurrent_states
 
 
 def language_forward(language, embeddings, attention_mask, position_ids, cut):
@@ -64,9 +68,9 @@ def language_forward(language, embeddings, attention_mask, position_ids, cut):
                 use_cache=True,
                 return_dict=True,
             )
-            cache.reorder_cache(
-                torch.zeros(len(embeddings), dtype=torch.long, device=embeddings.device)
-            )
+            # Transformers expects LongTensor; factories return Tensor with int64 dtype.
+            indices = torch.zeros(len(embeddings), dtype=torch.long, device=embeddings.device)
+            cache.reorder_cache(indices)  # ty: ignore[invalid-argument-type]
             return language(
                 inputs_embeds=embeddings[:, cut:],
                 attention_mask=attention_mask,

@@ -1,6 +1,6 @@
 """Render model-card comparisons from a completed run; requires matplotlib.
 
-Run: .cache/plot-venv/bin/python scripts/plot_model_card.py --run runs/v1
+Run: pdm run python scripts/plot_model_card.py --run runs/v1
 Outputs: six PNG/SVG/PDF figures, a PDF collection, data and provenance.
 """
 
@@ -491,7 +491,7 @@ def main():
     ax = fig.add_axes([0.205, 0.29, 0.74, 0.43])
     for i, system in enumerate(["jev", "laya-multilingual", "laya-vision"]):
         offset = 0
-        for key, label, color in segments:
+        for key, _label, color in segments:
             value = jev["paired"][system][key]
             ax.barh(i, value, left=offset, height=0.52, color=color, edgecolor="white", linewidth=1)
             if value >= 10:
@@ -614,7 +614,7 @@ def main():
         "From the repository root, use a Python environment with Matplotlib installed:",
         "",
         "```sh",
-        f".cache/plot-venv/bin/python scripts/plot_model_card.py --run {run}",
+        f"pdm run python scripts/plot_model_card.py --run {run}",
         "```",
         "",
     ]
