@@ -7,7 +7,7 @@ from pathlib import Path
 
 from PIL import Image
 
-BUB_REVISION = "9bf70488e22a44eeb875a9d55d9a7d352b82e381"
+BUB_REVISION = "6f23fee36a8aa55b71d5be015529a4b486b31d89"
 
 
 def create_agent(predictor, workspace: Path, tape_directory: Path):

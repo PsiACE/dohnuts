@@ -2,7 +2,7 @@
 
 References are pinned to Laya `d113dca2512fb3eaca313534bc54c7162d87c1d4`,
 Laya Vision `86ccec115ef3d72d1851168fc9b7194e8dbed35a`, and Bub main
-`9bf70488e22a44eeb875a9d55d9a7d352b82e381`. The training mixture includes upstream public tasks and soft teacher
+`6f23fee36a8aa55b71d5be015529a4b486b31d89`. The training mixture includes upstream public tasks and soft teacher
 labels. Existing Laya weights are benchmark references, not training targets.
 
 ## Publicly documented training coverage
