@@ -22,7 +22,7 @@ dependencies = [
 
 [project.optional-dependencies]
 train = ["pyarrow>=25", "scikit-learn>=1.9", "pandas>=3.0", "datasets>=4"]
-agent = ["bub @ git+https://github.com/bubbuild/bub.git@9bf70488e22a44eeb875a9d55d9a7d352b82e381"]
+agent = ["bub @ git+https://github.com/bubbuild/bub.git@6f23fee36a8aa55b71d5be015529a4b486b31d89"]
 
 [dependency-groups]
 quality = ["ruff==0.16.8", "ty==0.0.82", "prek>=0.3.1,<1", "pytest>=9,<10"]

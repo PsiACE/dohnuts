@@ -1,8 +1,8 @@
 # Agent integration with Bub main
 
 Dohnuts provides one decision tool through Bub. The `agent` extra pins Bub main at
-`9bf70488e22a44eeb875a9d55d9a7d352b82e381`. Integration uses its
-[Python SDK](https://github.com/bubbuild/bub/blob/9bf70488e22a44eeb875a9d55d9a7d352b82e381/website/src/content/docs/docs/build/sdk.md)
+`6f23fee36a8aa55b71d5be015529a4b486b31d89`. Integration uses its
+[Python SDK](https://github.com/bubbuild/bub/blob/6f23fee36a8aa55b71d5be015529a4b486b31d89/website/src/content/docs/docs/build/sdk.md)
 to provide one batch decision tool and persistent session tapes.
 
 Follow the [runtime and checkpoint setup](inference.md) first.

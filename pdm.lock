@@ -5,7 +5,7 @@
 groups = ["default", "agent", "docs", "plot", "quality", "train"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.1"
-content_hash = "sha256:8e157c028c923b2178ba79f73968404cd32a8d2ebc4cf52e4b4eff166d8c709a"
+content_hash = "sha256:c59298a633d19ccb8424e6c41e01228d97f6d2ebed437e4e8eeada57cbf9d806"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -287,31 +287,31 @@ files = [
 
 [[package]]
 name = "bub"
-version = "0.4.5.dev9"
+version = "0.5.1.dev9"
 requires_python = "<4.0,>=3.12"
 git = "https://github.com/bubbuild/bub.git"
-ref = "9bf70488e22a44eeb875a9d55d9a7d352b82e381"
-revision = "9bf70488e22a44eeb875a9d55d9a7d352b82e381"
+ref = "6f23fee36a8aa55b71d5be015529a4b486b31d89"
+revision = "6f23fee36a8aa55b71d5be015529a4b486b31d89"
 summary = "A tiny agent runtime, composable with plugins."
 groups = ["agent"]
 marker = "python_version == \"3.12\""
 dependencies = [
-    "aiohttp>=3.13.3",
-    "any-llm-sdk[anthropic]",
+    "aiohttp>=3.14.3",
+    "any-llm-sdk[anthropic]>=1.22.1",
     "authlib>=1.7.2",
     "httpx[socks]>=0.28.1",
-    "inquirer-textual>=0.5.1",
-    "loguru>=0.7.2",
+    "inquirer-textual>=0.8.0",
+    "loguru>=0.7.3",
     "pluggy>=1.6.0",
-    "prompt-toolkit>=3.0.0",
-    "pydantic-settings>=2.0.0",
-    "pydantic>=2.0.0",
-    "python-telegram-bot>=21.0",
-    "pyyaml>=6.0.0",
-    "rapidfuzz>=3.14.3",
-    "rich>=13.0.0",
-    "typer>=0.9.0",
-    "typing-extensions>=4.13.0",
+    "prompt-toolkit>=3.0.52",
+    "pydantic-settings>=2.14.2",
+    "pydantic>=2.12.5",
+    "python-telegram-bot>=22.7",
+    "pyyaml>=6.0.3",
+    "rapidfuzz>=3.14.5",
+    "rich>=14.3.4",
+    "typer>=0.24.1",
+    "typing-extensions>=4.15.0",
 ]
 
 [[package]]
@@ -963,7 +963,7 @@ files = [
 
 [[package]]
 name = "inquirer-textual"
-version = "0.6.1"
+version = "0.8.1"
 requires_python = "<3.15,>=3.9"
 summary = "Inquirer based on Textual"
 groups = ["agent"]
@@ -972,8 +972,8 @@ dependencies = [
     "textual>=8.2.6",
 ]
 files = [
-    {file = "inquirer_textual-0.6.1-py3-none-any.whl", hash = "sha256:8e93879e59fcf7b804941672e5efcb0f2aa3a117a36e4cafc2c91fdb6d0a6586"},
-    {file = "inquirer_textual-0.6.1.tar.gz", hash = "sha256:d8b0c959e4e58fd730a2fc3da4c92612bef757db1c664399cc7534be8c5b757a"},
+    {file = "inquirer_textual-0.8.1-py3-none-any.whl", hash = "sha256:a02e7796322cadc86b9c4978eab036200e8e3f198408dce3a1173c0b4461a7bb"},
+    {file = "inquirer_textual-0.8.1.tar.gz", hash = "sha256:1f098d0c4d7b3f4238857c4d9be50ad11e0f304ccf69f50191504cc620a2ec88"},
 ]
 
 [[package]]
@@ -2426,7 +2426,7 @@ version = "2026.4"
 requires_python = ">=2"
 summary = "Provider of IANA time zone data"
 groups = ["train"]
-marker = "(sys_platform == \"win32\" or sys_platform == \"emscripten\") and python_version == \"3.12\""
+marker = "(sys_platform == \"emscripten\" or sys_platform == \"win32\") and python_version == \"3.12\""
 files = [
     {file = "tzdata-2026.4-py2.py3-none-any.whl", hash = "sha256:c2169a8b0a7a5e9674da5a135ccdfb2b3e671b333ed9fed17b41f73c34476e81"},
     {file = "tzdata-2026.4.tar.gz", hash = "sha256:f1b8bd365d8d210c55353f4d7f8d6d8561c0ba50d704b700d195a9424bba0d79"},

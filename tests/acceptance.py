@@ -1,7 +1,6 @@
 """Accept an exported checkpoint through prediction, reload, and the real Bub SDK."""
 
 import argparse
-import ast
 import asyncio
 import gc
 import json
@@ -118,7 +117,7 @@ async def verify(args):
                 command += " image_path=" + shlex.quote(str(image_path.resolve()))
             stream = await agent.run_stream(session_id="acceptance-" + label, prompt=command)
             events = [event async for event in stream]
-            actual = ast.literal_eval(events[-1].data["text"])
+            actual = json.loads(events[-1].data["text"])
             assert actual == reference, "Bub changed the decision response"
             responses.append(actual)
     report = {
